@@ -4,8 +4,8 @@ from keras.models import Sequential
 from keras.layers import Dense,Input
 import matplotlib.pyplot as plt
 
-
-
+print("hellogithub")
+#------------------------
 (train_feature,train_label),(test_feature,test_label) = mnist.load_data()
 
 #show test picture on index
