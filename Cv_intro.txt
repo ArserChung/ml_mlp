@@ -1,0 +1,29 @@
+import cv2 as cv
+
+# 讀取圖像
+img = cv.imread('path_to_image_file')
+
+# 顯示圖像
+cv.imshow('Image Window', img)
+
+# 等待鍵盤輸入來關閉窗口
+cv.waitKey(0)
+
+# 關閉所有窗口
+cv.destroyAllWindows()
+```
+
+### 解釋
+1. **`cv.imread()`**:
+讀取圖像文件並將其存儲在變數 `img` 中。
+
+2. **`cv.imshow()`**: 打開一個窗口並顯示圖像。
+第一個參數是窗口名稱，第二個參數是圖像數據。
+
+3. **`cv.waitKey(0)`**: 讓程序等待鍵盤輸入。
+傳遞 `0` 意味著程序將無限期等待，
+直到你按下任意鍵。
+
+4. **`cv.destroyAllWindows()`**:
+關閉所有打開的窗口。
+
