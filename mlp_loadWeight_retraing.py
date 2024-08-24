@@ -109,3 +109,4 @@ except:
     print("儲存失敗")
 else :
     print("load_weight_new_model.h5儲存成功")
+    del model
