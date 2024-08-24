@@ -45,11 +45,27 @@ test_feature_vector_normal = test_feature_vector/255
 try:
     model = load_model('Mnist_mlp_model.h5')
 except :
-    print("load model")
+    print("Failed to load the model")
+else :
+    print("Successed to load the model")
 
+prediction = model.predict(test_feature_vector_normal)
+predict_label = []
 
+print(prediction.shape) #(16, 10)
+print(prediction[0])
 
+for i in prediction:
+    print(i)
+    predict_label.append(np.argmax(i))
 
-
-
-
+j = 0
+for i in files:
+    img = cv.imread(i)
+    txt = "label:"+str(test_label[j])
+    print(txt)
+    print("模組預測為: ",predict_label[j])
+    cv.imshow(txt, img)
+    j+=1
+    cv.waitKey(0)
+    cv.destroyAllWindows()
