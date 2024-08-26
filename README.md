@@ -1,17 +1,6 @@
 # 我的專案
 
 ## 簡介
+Some basis of mlp strutrue
 
-這是專案的簡介。
-
-### 重要信息
-
-<span style="font-size:20px;">**請注意**: 這是需要特別注意的內容。</span>
-
-## 使用方法
-
-使用以下步驟來安裝和使用專案：
-
-1. 克隆專案
-2. 安裝依賴
-3. 運行腳本
+## IF you have any good option , nice to mess or mail me.
